@@ -13,16 +13,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.3'
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: simplexml
 
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress --no-suggest --no-interaction
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest --no-interaction
 
-    - name: Run Psalm Security Scan
-      run: vendor/bin/psalm --taint-analysis
+      - name: Make psalm executable
+        run: chmod +x vendor/bin/psalm
+
+      - name: Run Psalm Security Scan
+        run: vendor/bin/psalm --taint-analysis
