@@ -1,6 +1,8 @@
 <?php
 
-function bubblesort(array $data): array
+require_once "../Common/swap.php";
+
+function bubbleSort(array $data): array
 {
     for($i = 0; $i < count($data); $i++){
         for($j = $i + 1; $j < count($data); $j++){
@@ -10,11 +12,4 @@ function bubblesort(array $data): array
         }
     }
     return $data;
-}
-
-function swap(&$a, &$b): void
-{
-    $temp = $a;
-    $a = $b;
-    $b = $temp;
 }
