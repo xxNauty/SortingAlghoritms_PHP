@@ -28,7 +28,7 @@ jobs:
         run: composer global require "squizlabs/php_codesniffer=*"
 
       - name: Run PHP_CodeSniffer
-        run: ~/.composer/vendor/bin/phpcs --standard=PSR12 src/
+        run: ~/.composer/vendor/bin/phpcs --standard=PSR12 ./
 
       - name: Upload phpcs report
         if: failure()
