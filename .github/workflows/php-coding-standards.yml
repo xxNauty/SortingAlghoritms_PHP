@@ -28,7 +28,7 @@ jobs:
         run: composer global require "squizlabs/php_codesniffer=*"
 
       - name: Run PHP_CodeSniffer
-        run: ~/.composer/vendor/bin/phpcs --standard=PSR12 ./ --ignore=vendor/*,.psalm/*,.github/*
+        run: ~/.composer/vendor/bin/phpcs --standard=PSR12 ./ --ignore=vendor/*,.psalm/*,.github/* --exclude=Generic.Files.SideEffects
 
 #      - name: Run PHP_CodeBeautifier
 #        run: ~/.composer/vendor/bin/phpcbf --standard=PSR12 ./

@@ -11,8 +11,7 @@ function bozoSort(array $data): array
                 $data[rand(0, count($data))],
                 $data[rand(0, count($data))]
             );
-        }
-        else {
+        } else {
             return $data;
         }
     }
