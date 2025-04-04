@@ -46,6 +46,8 @@
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
       <path value="$PROJECT_DIR$/vendor/webmozart/path-util" />
+      <path value="$PROJECT_DIR$/vendor/php-standard-library/psalm-plugin" />
+      <path value="$PROJECT_DIR$/vendor/orklah/psalm-insane-comparison" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
@@ -122,12 +124,14 @@
   </component>
   <component name="Psalm">
     <Psalm_settings>
-      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="34058399-eca3-4629-9e26-58aa742c88e8" timeout="60000" />
+      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="34058399-eca3-4629-9e26-58aa742c88e8" tool_path="/mnt/c/Kody/AlgorytmySortowania/vendor/bin/psalm" timeout="60000" />
       <PsalmConfiguration tool_path="$PROJECT_DIR$/vendor/bin/psalm" />
     </Psalm_settings>
   </component>
   <component name="PsalmOptionsConfiguration">
     <option name="config" value="$PROJECT_DIR$/psalm.xml" />
+    <option name="findUnusedCode" value="true" />
+    <option name="showInfo" value="true" />
     <option name="transferred" value="true" />
   </component>
 </project>

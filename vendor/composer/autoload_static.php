@@ -50,10 +50,16 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
+            'Psl\\Psalm\\' => 10,
             'Psalm\\' => 6,
             'PhpParser\\' => 10,
             'PackageVersions\\' => 16,
             'PHPStan\\PhpDocParser\\' => 21,
+        ),
+        'O' => 
+        array (
+            'Orklah\\PsalmInsaneComparison\\Hooks\\' => 35,
+            'Orklah\\PsalmInsaneComparison\\' => 29,
         ),
         'L' => 
         array (
@@ -136,6 +142,10 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Psl\\Psalm\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-standard-library/psalm-plugin/src',
+        ),
         'Psalm\\' => 
         array (
             0 => __DIR__ . '/..' . '/vimeo/psalm/src/Psalm',
@@ -151,6 +161,14 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         'PHPStan\\PhpDocParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
+        ),
+        'Orklah\\PsalmInsaneComparison\\Hooks\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/orklah/psalm-insane-comparison/hooks',
+        ),
+        'Orklah\\PsalmInsaneComparison\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/orklah/psalm-insane-comparison',
         ),
         'LanguageServerProtocol\\' => 
         array (

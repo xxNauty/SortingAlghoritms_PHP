@@ -8,9 +8,10 @@
         cacheDirectory=".psalm/cache"
 >
     <projectFiles>
-        <directory name="./" />
+        <directory name="./"/>
     </projectFiles>
-<!--    <plugins>-->
-<!--        <pluginClass class="Psalm\\TaintAnalysisPlugin" />-->
-<!--    </plugins>-->
+    <plugins>
+        <pluginClass xmlns="https://getpsalm.org/schema/config" class="Psl\Psalm\Plugin"/>
+        <pluginClass xmlns="https://getpsalm.org/schema/config" class="Orklah\PsalmInsaneComparison\Plugin"/>
+    </plugins>
 </psalm>

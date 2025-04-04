@@ -1,6 +1,8 @@
 {
   "require-dev": {
-    "vimeo/psalm": "^4.0"
+    "vimeo/psalm": "^4.0",
+    "php-standard-library/psalm-plugin": "^2.0",
+    "orklah/psalm-insane-comparison": "^2.4"
   },
   "scripts": {
     "psalm": "psalm --taint-analysis"
