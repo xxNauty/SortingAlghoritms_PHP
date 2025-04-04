@@ -1,6 +1,6 @@
 <?php
 
-function countingSort(array $data): ?array
+function countingSort(array $data): array
 {
     $maxValue = max($data);
     $sizeOfInput = count($data);
@@ -13,7 +13,7 @@ function countingSort(array $data): ?array
     }
 
     for ($i = 0; $i < count($counts); $i++) {
-        if ($counts[$i] > 0) {
+        if($counts[$i] > 0) {
             for ($j = 0; $j < $counts[$i]; $j++) {
                 $output[] = $i;
             }
