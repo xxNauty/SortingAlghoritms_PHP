@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<psalm
+        name="My Project"
+        errorLevel="6"
+        resolveFromConfigFile="true"
+        findUnusedCode="true"
+        findUnusedVariablesAndParams="true"
+        cacheDirectory=".psalm/cache"
+>
+    <projectFiles>
+        <directory name="src" />
+    </projectFiles>
+    <plugins>
+        <pluginClass class="Psalm\\TaintAnalysisPlugin" />
+    </plugins>
+</psalm>
