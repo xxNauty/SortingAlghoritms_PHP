@@ -13,6 +13,7 @@
   <component name="PhpCodeSniffer">
     <phpcs_settings>
       <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="34058399-eca3-4629-9e26-58aa742c88e8" timeout="30000" />
+      <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/vendor/bin/phpcbf" tool_path="$PROJECT_DIR$/vendor/bin/phpcs" />
     </phpcs_settings>
   </component>
   <component name="PhpIncludePathManager">
@@ -48,6 +49,7 @@
       <path value="$PROJECT_DIR$/vendor/webmozart/path-util" />
       <path value="$PROJECT_DIR$/vendor/php-standard-library/psalm-plugin" />
       <path value="$PROJECT_DIR$/vendor/orklah/psalm-insane-comparison" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
