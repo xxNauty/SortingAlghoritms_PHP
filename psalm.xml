@@ -10,7 +10,7 @@
     <projectFiles>
         <directory name="./" />
     </projectFiles>
-    <plugins>
-        <pluginClass class="Psalm\\TaintAnalysisPlugin" />
-    </plugins>
+<!--    <plugins>-->
+<!--        <pluginClass class="Psalm\\TaintAnalysisPlugin" />-->
+<!--    </plugins>-->
 </psalm>
