@@ -1,6 +1,6 @@
 <?php
 
-require_once "../Common/swap.php";
+require_once "../../Common/swap.php";
 
 function bubbleSort(array $data): array
 {

@@ -1,10 +1,10 @@
 <?php
 
-require_once "../BogoSort/main.php";
-require_once "../BozoSort/main.php";
-require_once "../BubbleSort/main.php";
-require_once "../StalinSort/main.php";
-require_once "../CountingSort/main.php";
+require_once "../Algorithms/BogoSort/main.php";
+require_once "../Algorithms/BozoSort/main.php";
+require_once "../Algorithms/BubbleSort/main.php";
+require_once "../Algorithms/StalinSort/main.php";
+require_once "../Algorithms/CountingSort/main.php";
 
 require_once "../Common/array_printer.php";
 
@@ -42,6 +42,7 @@ echo "--------------\n";
 
 //benchmarkForBogoSort();
 //benchmarkForBozoSort();
+//Wyłączone ze względu na niską wydajność
 benchmarkForBubbleSort();
 benchmarkForStalinSort();
 benchmarkForCountingSort();

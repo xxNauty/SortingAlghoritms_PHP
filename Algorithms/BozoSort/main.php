@@ -1,7 +1,7 @@
 <?php
 
-require_once "../Common/is_sorted.php";
-require_once "../Common/swap.php";
+require_once "../../Common/is_sorted.php";
+require_once "../../Common/swap.php";
 
 function bozoSort(array $data): array
 {
