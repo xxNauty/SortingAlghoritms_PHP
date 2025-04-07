@@ -1,5 +1,7 @@
 <?php
 
+namespace Common;
+
 function swap(mixed &$a, mixed &$b): void
 {
     $temp = $a;

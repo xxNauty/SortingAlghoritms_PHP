@@ -1,7 +1,8 @@
 <?php
 
-require_once "../../Common/is_sorted.php";
-require_once "../../Common/swap.php";
+namespace Algorithms;
+
+use Common/
 
 function bogoSort(array $data): array
 {

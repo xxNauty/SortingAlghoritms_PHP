@@ -18,4 +18,6 @@ return array(
     'a4a119a56e50fbb293281d9a48007e0e' => $vendorDir . '/symfony/polyfill-php80/bootstrap.php',
     'dc51568953534d6c54b08731e61104e2' => $vendorDir . '/vimeo/psalm/src/functions.php',
     '8e4171839e12546525126d38dac3dafa' => $vendorDir . '/vimeo/psalm/src/spl_object_id.php',
+    '6124b4c8570aa390c21fafd04a26c69f' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+    'ec07570ca5a812141189b1fa81503674' => $vendorDir . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
 );
