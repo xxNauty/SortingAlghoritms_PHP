@@ -16,5 +16,4 @@ class StalinSort
 
         return $output;
     }
-
 }
