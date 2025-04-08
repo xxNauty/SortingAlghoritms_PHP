@@ -8,7 +8,10 @@
         cacheDirectory=".psalm/cache"
 >
     <projectFiles>
-        <directory name="./"/>
+        <directory name="./Algorithms"/>
+        <directory name="./Benchmark"/>
+        <directory name="./Common"/>
+        <directory name="./Tests"/>
     </projectFiles>
     <plugins>
         <pluginClass xmlns="https://getpsalm.org/schema/config" class="Psl\Psalm\Plugin"/>
