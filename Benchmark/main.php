@@ -1,10 +1,10 @@
 <?php
 
-require_once "../Algorithms/BogoSort/main.php";
-require_once "../Algorithms/BozoSort/main.php";
-require_once "../Algorithms/BubbleSort/main.php";
-require_once "../Algorithms/StalinSort/main.php";
-require_once "../Algorithms/CountingSort/main.php";
+require_once "../Algorithms/BogoSort/BogoSort.php";
+require_once "../Algorithms/BozoSort/BozoSort.php";
+require_once "../Algorithms/BubbleSort/BubbleSort.php";
+require_once "../Algorithms/StalinSort/StalinSort.php";
+require_once "../Algorithms/CountingSort/CountingSort.php";
 
 require_once "../Common/array_printer.php";
 

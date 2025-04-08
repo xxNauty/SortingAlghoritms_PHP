@@ -4,7 +4,7 @@ namespace Tests;
 
 use PHPUnit\Framework\TestCase;
 
-require_once "./Algorithms/BozoSort/main.php";
+require_once "./Algorithms/BozoSort/BozoSort.php";
 require_once "./Tests/DataForTests.php";
 
 class BozoSortTest extends TestCase
