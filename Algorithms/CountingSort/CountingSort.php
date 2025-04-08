@@ -17,7 +17,7 @@ class CountingSort
         }
 
         for ($i = 0; $i < count($counts); $i++) {
-            if($counts[$i] > 0) {
+            if ($counts[$i] > 0) {
                 for ($j = 0; $j < $counts[$i]; $j++) {
                     $output[] = $i;
                 }
@@ -26,5 +26,4 @@ class CountingSort
 
         return $output;
     }
-
 }
