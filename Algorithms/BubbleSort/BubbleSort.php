@@ -1,5 +1,7 @@
 <?php
 
+namespace Algorithms\BubbleSort;
+
 use Common\CommonFunctions;
 
 class BubbleSort

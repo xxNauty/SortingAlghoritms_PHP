@@ -1,11 +1,8 @@
 <?php
 
-namespace Tests;
+namespace Tests\BozoSort;
 
 use PHPUnit\Framework\TestCase;
-
-require_once "./Algorithms/BozoSort/BozoSort.php";
-require_once "./Tests/DataForTests.php";
 
 class BozoSortTest extends TestCase
 {
@@ -14,7 +11,8 @@ class BozoSortTest extends TestCase
         $this->assertTrue(true);
     }
 
-    public function testOnSorted(){
+    public function testOnSorted()
+    {
         $this->assertTrue(true);
     }
 }

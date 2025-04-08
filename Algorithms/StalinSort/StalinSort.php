@@ -1,5 +1,7 @@
 <?php
 
+namespace Algorithms\StalinSort;
+
 class StalinSort
 {
     public function stalinSort(array $data): array

@@ -1,5 +1,7 @@
 <?php
 
+namespace Algorithms\BozoSort;
+
 use Common\CommonFunctions;
 
 class BozoSort
@@ -18,4 +20,3 @@ class BozoSort
         }
     }
 }
-

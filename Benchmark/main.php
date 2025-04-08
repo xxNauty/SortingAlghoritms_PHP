@@ -37,7 +37,7 @@ echo "--------------\n";
 echo "Dane wejściowe: \n";
 printArray($data);
 echo "--------------\n";
-echo "Rozmiar tablicy wejściowej: ".count($data)."\n";
+echo "Rozmiar tablicy wejściowej: " . count($data) . "\n";
 echo "--------------\n";
 
 //benchmarkForBogoSort();
@@ -62,7 +62,7 @@ function benchmarkForBogoSort(): void
 
     $executionTime = $endTime - $startTime;
     echo "Czas sortowania metodą BogoSort: " . number_format($executionTime, 15) . " sekund.\n";
-    echo "Rozmiar tablicy po sortowaniu: ".count($sortedData)."\n";
+    echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
 }
 
 function benchmarkForBozoSort(): void
@@ -78,7 +78,7 @@ function benchmarkForBozoSort(): void
 
     $executionTime = $endTime - $startTime;
     echo "Czas sortowania metodą BozoSort: " . number_format($executionTime, 15) . " sekund.\n";
-    echo "Rozmiar tablicy po sortowaniu: ".count($sortedData)."\n";
+    echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
 }
 
 function benchmarkForBubbleSort(): void
@@ -94,7 +94,7 @@ function benchmarkForBubbleSort(): void
 
     $executionTime = $endTime - $startTime;
     echo "Czas sortowania metodą BubbleSort:   " . number_format($executionTime, 15) . " sekund.\n";
-    echo "Rozmiar tablicy po sortowaniu: ".count($sortedData)."\n";
+    echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
 }
 
 function benchmarkForStalinSort(): void
@@ -110,7 +110,7 @@ function benchmarkForStalinSort(): void
 
     $executionTime = $endTime - $startTime;
     echo "Czas sortowania metodą StalinSort:   " . number_format($executionTime, 15) . " sekund.\n";
-    echo "Rozmiar tablicy po sortowaniu: ".count($sortedData)."\n";
+    echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
 }
 
 function benchmarkForCountingSort(): void
@@ -126,5 +126,5 @@ function benchmarkForCountingSort(): void
 
     $executionTime = $endTime - $startTime;
     echo "Czas sortowania metodą CountingSort: " . number_format($executionTime, 15) . " sekund.\n";
-    echo "Rozmiar tablicy po sortowaniu: ".count($sortedData)."\n";
+    echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
 }

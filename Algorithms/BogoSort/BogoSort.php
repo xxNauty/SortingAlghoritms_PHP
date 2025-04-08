@@ -1,6 +1,6 @@
 <?php
 
-namespace Algorithms;
+namespace Algorithms\BogoSort;
 
 use Common\CommonFunctions;
 
