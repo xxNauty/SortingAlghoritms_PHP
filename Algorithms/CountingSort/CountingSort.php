@@ -1,5 +1,7 @@
 <?php
 
+namespace Algorithms\CountingSort;
+
 class CountingSort
 {
     public function countingSort(array $data): array
