@@ -37,6 +37,10 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
             'Webmozart\\PathUtil\\' => 19,
             'Webmozart\\Assert\\' => 17,
         ),
+        'T' => 
+        array (
+            'Tests\\' => 6,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -78,11 +82,13 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
             'Composer\\XdebugHandler\\' => 23,
             'Composer\\Semver\\' => 16,
             'Composer\\Pcre\\' => 14,
+            'Common\\' => 7,
         ),
         'A' => 
         array (
             'Amp\\ByteStream\\' => 15,
             'Amp\\' => 4,
+            'Algorithms\\' => 11,
             'AdvancedJsonRpc\\' => 16,
         ),
     );
@@ -105,6 +111,10 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Tests',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -202,6 +212,10 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
         ),
+        'Common\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Common',
+        ),
         'Amp\\ByteStream\\' => 
         array (
             0 => __DIR__ . '/..' . '/amphp/byte-stream/lib',
@@ -209,6 +223,10 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         'Amp\\' => 
         array (
             0 => __DIR__ . '/..' . '/amphp/amp/lib',
+        ),
+        'Algorithms\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Algorithms',
         ),
         'AdvancedJsonRpc\\' => 
         array (
