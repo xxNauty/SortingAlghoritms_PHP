@@ -7,6 +7,7 @@ require '../vendor/autoload.php'; //wymagane by działały namespace i importowa
 use Algorithms\BogoSort\BogoSort;
 use Algorithms\BozoSort\BozoSort;
 use Algorithms\BubbleSort\BubbleSort;
+use Algorithms\BucketSort\BucketSort;
 use Algorithms\CountingSort\CountingSort;
 use Algorithms\StalinSort\StalinSort;
 
@@ -50,8 +51,8 @@ class Benchmark
 
 //        $this->benchmarkForBogoSort();
 //        $this->benchmarkForBozoSort();
-//        Wyłączone ze względu na niską wydajność
         $this->benchmarkForBubbleSort();
+        $this->benchmarkForBucketSort();
         $this->benchmarkForStalinSort();
         $this->benchmarkForCountingSort();
     }
@@ -104,19 +105,19 @@ class Benchmark
         echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
     }
 
-    private function benchmarkForStalinSort(): void
+    private function benchmarkForBucketSort(): void
     {
         $dataToSort = self::DATA;
 
         $startTime = microtime(true);
 
-        $algorithm = new StalinSort();
-        $sortedData = $algorithm->stalinSort($dataToSort);
+        $algorithm = new BucketSort();
+        $sortedData = $algorithm->bucketSort($dataToSort);
 
         $endTime = microtime(true);
 
         $executionTime = $endTime - $startTime;
-        echo "Czas sortowania metodą StalinSort:   " . number_format($executionTime, 15) . " sekund.\n";
+        echo "Czas sortowania metodą BucketSort:   " . number_format($executionTime, 15) . " sekund.\n";
         echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
     }
 
@@ -133,6 +134,22 @@ class Benchmark
 
         $executionTime = $endTime - $startTime;
         echo "Czas sortowania metodą CountingSort: " . number_format($executionTime, 15) . " sekund.\n";
+        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+    }
+
+    private function benchmarkForStalinSort(): void
+    {
+        $dataToSort = self::DATA;
+
+        $startTime = microtime(true);
+
+        $algorithm = new StalinSort();
+        $sortedData = $algorithm->stalinSort($dataToSort);
+
+        $endTime = microtime(true);
+
+        $executionTime = $endTime - $startTime;
+        echo "Czas sortowania metodą StalinSort:   " . number_format($executionTime, 15) . " sekund.\n";
         echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
     }
 }
