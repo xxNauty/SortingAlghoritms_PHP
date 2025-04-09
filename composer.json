@@ -1,4 +1,11 @@
 {
+  "autoload": {
+    "psr-4": {
+      "Common\\": "Common/",
+      "Algorithms\\": "Algorithms/",
+      "Tests\\": "Tests/"
+    }
+  },
   "require-dev": {
     "vimeo/psalm": "^4.0",
     "php-standard-library/psalm-plugin": "^2.0",

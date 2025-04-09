@@ -1,5 +1,9 @@
 <?php
 
+namespace Benchmark;
+
+require '../vendor/autoload.php'; //wymagane by działały namespace i importowanie z użyciem use
+
 use Algorithms\BogoSort\BogoSort;
 use Algorithms\BozoSort\BozoSort;
 use Algorithms\BubbleSort\BubbleSort;
@@ -54,8 +58,7 @@ class Benchmark
 
     private function benchmarkForBogoSort(): void
     {
-        global $data;
-        $dataToSort = $data;
+        $dataToSort = self::DATA;
 
         $startTime = microtime(true);
 
@@ -71,8 +74,7 @@ class Benchmark
 
     private function benchmarkForBozoSort(): void
     {
-        global $data;
-        $dataToSort = $data;
+        $dataToSort = self::DATA;
 
         $startTime = microtime(true);
 
@@ -88,8 +90,7 @@ class Benchmark
 
     private function benchmarkForBubbleSort(): void
     {
-        global $data;
-        $dataToSort = $data;
+        $dataToSort = self::DATA;
 
         $startTime = microtime(true);
 
@@ -105,8 +106,7 @@ class Benchmark
 
     private function benchmarkForStalinSort(): void
     {
-        global $data;
-        $dataToSort = $data;
+        $dataToSort = self::DATA;
 
         $startTime = microtime(true);
 
@@ -122,8 +122,7 @@ class Benchmark
 
     private function benchmarkForCountingSort(): void
     {
-        global $data;
-        $dataToSort = $data;
+        $dataToSort = self::DATA;
 
         $startTime = microtime(true);
 
