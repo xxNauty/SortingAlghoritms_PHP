@@ -1,2 +1,0 @@
-1. Algorytmy zwracają liczbę operacji potrzebną do posortowania
-2. Pass-by-reference
