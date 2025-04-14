@@ -2,17 +2,21 @@
 
 namespace Tests\BozoSort;
 
+use Algorithms\BozoSort\BozoSort;
 use PHPUnit\Framework\TestCase;
+use Tests\DataForTests;
 
 class BozoSortTest extends TestCase
 {
-    public function testOnUnsorted(): void
+    public function test(): void
     {
-        $this->assertTrue(true);
-    }
+        $this->markTestSkipped("Zbyt wolny by zostawić");
 
-    public function testOnSorted()
-    {
-        $this->assertTrue(true);
+        $input = DataForTests::UNSORTED_DATA;
+
+        $algorithm = new BozoSort();
+        $input = $algorithm->bozoSort($input);
+
+        $this->assertEquals(DataForTests::SORTED_DATA, $input);
     }
 }
