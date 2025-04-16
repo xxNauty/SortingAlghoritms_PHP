@@ -58,7 +58,6 @@ class Benchmark
         $combsort = $this->benchmarkForCombSort();
         $stalinsort = $this->benchmarkForStalinSort();
 
-        // Collect results in an associative array
         $results = [
             'BubbleSort' => $bubblesort,
             'BucketSort' => $bucketsort,
@@ -67,7 +66,6 @@ class Benchmark
             'StalinSort' => $stalinsort,
         ];
 
-        // Find the function with the highest and lowest values
         $highestFunction = array_keys($results, max($results))[0];
         $lowestFunction = array_keys($results, min($results))[0];
 
