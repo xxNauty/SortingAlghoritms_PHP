@@ -52,15 +52,30 @@ class Benchmark
 
 //        $this->benchmarkForBogoSort();
 //        $this->benchmarkForBozoSort();
-        $this->benchmarkForBubbleSort();
-        $this->benchmarkForBucketSort();
-        $this->benchmarkForCountingSort();
-        $this->benchmarkForCombSort();
-        $this->benchmarkForStalinSort();
+        $bubblesort = $this->benchmarkForBubbleSort();
+        $bucketsort = $this->benchmarkForBucketSort();
+        $countingsort = $this->benchmarkForCountingSort();
+        $combsort = $this->benchmarkForCombSort();
+        $stalinsort = $this->benchmarkForStalinSort();
 
+        $results = [
+            'BubbleSort' => $bubblesort,
+            'BucketSort' => $bucketsort,
+            'CountingSort' => $countingsort,
+            'CombSort' => $combsort,
+            'StalinSort' => $stalinsort,
+        ];
+
+        $highestFunction = array_keys($results, max($results))[0];
+        $lowestFunction = array_keys($results, min($results))[0];
+
+        echo "--------------\n";
+
+        echo "Najszybsze sortowanie: " . $lowestFunction . " z czasem: " . number_format($results[$highestFunction], 15) . " sekund.\n";
+        echo "Najwolniejsze sortowanie: " . $highestFunction . " z czasem: " . number_format($results[$lowestFunction], 15) . " sekund.\n";
     }
 
-    private function benchmarkForBogoSort(): void
+    private function benchmarkForBogoSort(): float
     {
         $dataToSort = self::DATA;
 
@@ -73,10 +88,12 @@ class Benchmark
 
         $executionTime = $endTime - $startTime;
         echo "Czas sortowania metodą BogoSort: " . number_format($executionTime, 15) . " sekund.\n";
-        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+//        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+
+        return (float) number_format($executionTime, 15);
     }
 
-    private function benchmarkForBozoSort(): void
+    private function benchmarkForBozoSort(): float
     {
         $dataToSort = self::DATA;
 
@@ -89,10 +106,12 @@ class Benchmark
 
         $executionTime = $endTime - $startTime;
         echo "Czas sortowania metodą BozoSort: " . number_format($executionTime, 15) . " sekund.\n";
-        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+//        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+
+        return (float) number_format($executionTime, 15);
     }
 
-    private function benchmarkForBubbleSort(): void
+    private function benchmarkForBubbleSort(): float
     {
         $dataToSort = self::DATA;
 
@@ -105,10 +124,12 @@ class Benchmark
 
         $executionTime = $endTime - $startTime;
         echo "Czas sortowania metodą BubbleSort:   " . number_format($executionTime, 15) . " sekund.\n";
-        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+//        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+
+        return (float) number_format($executionTime, 15);
     }
 
-    private function benchmarkForBucketSort(): void
+    private function benchmarkForBucketSort(): float
     {
         $dataToSort = self::DATA;
 
@@ -121,10 +142,12 @@ class Benchmark
 
         $executionTime = $endTime - $startTime;
         echo "Czas sortowania metodą BucketSort:   " . number_format($executionTime, 15) . " sekund.\n";
-        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+//        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+
+        return (float) number_format($executionTime, 15);
     }
 
-    private function benchmarkForCombSort(): void
+    private function benchmarkForCombSort(): float
     {
         $dataToSort = self::DATA;
 
@@ -137,10 +160,12 @@ class Benchmark
 
         $executionTime = $endTime - $startTime;
         echo "Czas sortowania metodą CombSort:     " . number_format($executionTime, 15) . " sekund.\n";
-        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+//        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+
+        return (float) number_format($executionTime, 15);
     }
 
-    private function benchmarkForCountingSort(): void
+    private function benchmarkForCountingSort(): float
     {
         $dataToSort = self::DATA;
 
@@ -153,10 +178,12 @@ class Benchmark
 
         $executionTime = $endTime - $startTime;
         echo "Czas sortowania metodą CountingSort: " . number_format($executionTime, 15) . " sekund.\n";
-        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+//        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+
+        return (float) number_format($executionTime, 15);
     }
 
-    private function benchmarkForStalinSort(): void
+    private function benchmarkForStalinSort(): float
     {
         $dataToSort = self::DATA;
 
@@ -169,7 +196,9 @@ class Benchmark
 
         $executionTime = $endTime - $startTime;
         echo "Czas sortowania metodą StalinSort:   " . number_format($executionTime, 15) . " sekund.\n";
-        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+//        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+
+        return (float) number_format($executionTime, 15);
     }
 }
 
