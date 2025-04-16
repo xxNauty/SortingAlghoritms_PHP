@@ -13,7 +13,7 @@ class BubbleSortTest extends TestCase
         $input = DataForTests::UNSORTED_DATA;
 
         $algorithm = new BubbleSort();
-        $input = $algorithm->bubbleSort($input);
+        $input = $algorithm->sort($input);
 
         $this->assertEquals(DataForTests::SORTED_DATA, $input);
     }
