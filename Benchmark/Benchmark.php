@@ -96,7 +96,7 @@ class Benchmark
         $startTime = microtime(true);
 
         $algorithm = new BubbleSort();
-        $sortedData = $algorithm->bubbleSort($dataToSort);
+        $sortedData = $algorithm->sort($dataToSort);
 
         $endTime = microtime(true);
 

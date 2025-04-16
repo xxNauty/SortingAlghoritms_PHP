@@ -2,11 +2,12 @@
 
 namespace Algorithms\BubbleSort;
 
+use Common\AlgorithmInterface;
 use Common\CommonFunctions;
 
-class BubbleSort
+class BubbleSort implements AlgorithmInterface
 {
-    public function bubbleSort(array $data): array
+    public function sort(array $data): array
     {
         for ($i = 0; $i < count($data); $i++) {
             for ($j = $i + 1; $j < count($data); $j++) {
