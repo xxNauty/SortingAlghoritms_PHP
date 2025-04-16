@@ -2,13 +2,12 @@
 
 namespace Algorithms\CombSort;
 
-require '../../vendor/autoload.php'; //wymagane by działały namespace i importowanie z użyciem use
-
+use Common\AlgorithmInterface;
 use Common\CommonFunctions;
 
-class CombSort
+class CombSort implements AlgorithmInterface
 {
-    public function combSort(array $data): array
+    public function sort(array $data): array
     {
         $gap = count($data);
         $swapped = true;
@@ -31,7 +30,3 @@ class CombSort
         return $data;
     }
 }
-
-$alg = new CombSort();
-
-var_dump($alg->combSort([5, 3, 8, 12, 76, 32, 99, 11, 12, 32]));

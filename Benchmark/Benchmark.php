@@ -8,6 +8,7 @@ use Algorithms\BogoSort\BogoSort;
 use Algorithms\BozoSort\BozoSort;
 use Algorithms\BubbleSort\BubbleSort;
 use Algorithms\BucketSort\BucketSort;
+use Algorithms\CombSort\CombSort;
 use Algorithms\CountingSort\CountingSort;
 use Algorithms\StalinSort\StalinSort;
 
@@ -54,6 +55,7 @@ class Benchmark
         $this->benchmarkForBubbleSort();
         $this->benchmarkForBucketSort();
         $this->benchmarkForCountingSort();
+        $this->benchmarkForCombSort();
         $this->benchmarkForStalinSort();
 
     }
@@ -119,6 +121,22 @@ class Benchmark
 
         $executionTime = $endTime - $startTime;
         echo "Czas sortowania metodą BucketSort:   " . number_format($executionTime, 15) . " sekund.\n";
+        echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
+    }
+
+    private function benchmarkForCombSort(): void
+    {
+        $dataToSort = self::DATA;
+
+        $startTime = microtime(true);
+
+        $algorithm = new CombSort();
+        $sortedData = $algorithm->sort($dataToSort);
+
+        $endTime = microtime(true);
+
+        $executionTime = $endTime - $startTime;
+        echo "Czas sortowania metodą CombSort:     " . number_format($executionTime, 15) . " sekund.\n";
         echo "Rozmiar tablicy po sortowaniu: " . count($sortedData) . "\n";
     }
 

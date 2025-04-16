@@ -8,5 +8,5 @@ vendor
 *.cache
 *.log
 
-todo.txt
+todo.md
 .phpunit.result.cache
