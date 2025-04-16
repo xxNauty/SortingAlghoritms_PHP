@@ -53,8 +53,9 @@ class Benchmark
 //        $this->benchmarkForBozoSort();
         $this->benchmarkForBubbleSort();
         $this->benchmarkForBucketSort();
-        $this->benchmarkForStalinSort();
         $this->benchmarkForCountingSort();
+        $this->benchmarkForStalinSort();
+
     }
 
     private function benchmarkForBogoSort(): void
@@ -112,7 +113,7 @@ class Benchmark
         $startTime = microtime(true);
 
         $algorithm = new BucketSort();
-        $sortedData = $algorithm->bucketSort($dataToSort);
+        $sortedData = $algorithm->sort($dataToSort);
 
         $endTime = microtime(true);
 

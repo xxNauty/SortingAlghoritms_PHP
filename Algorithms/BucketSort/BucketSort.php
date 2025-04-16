@@ -2,11 +2,11 @@
 
 namespace Algorithms\BucketSort;
 
-use Common\CommonFunctions;
+use Common\AlgorithmInterface;
 
-class BucketSort
+class BucketSort implements AlgorithmInterface
 {
-    public function bucketSort(array $data): array
+    public function sort(array $data): array
     {
         if (empty($data)) {
             return [];
@@ -18,9 +18,7 @@ class BucketSort
         $bucketCount = 10;
         $buckets = array_fill(0, $bucketCount, []);
 
-        // Distribute numbers into buckets
         foreach ($data as $num) {
-            // Calculate the appropriate bucket index
             $bucketIndex = (int)(($num - $min) / ($max - $min + 1) * $bucketCount);
             $buckets[$bucketIndex][] = $num;
         }

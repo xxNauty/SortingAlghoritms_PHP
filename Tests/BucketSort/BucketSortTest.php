@@ -13,7 +13,7 @@ class BucketSortTest extends TestCase
         $input = DataForTests::UNSORTED_DATA;
 
         $algorithm = new BucketSort();
-        $input = $algorithm->bucketSort($input);
+        $input = $algorithm->sort($input);
 
         $this->assertEquals(DataForTests::SORTED_DATA, $input);
     }
